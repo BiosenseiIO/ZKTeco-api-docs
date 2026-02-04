@@ -95,7 +95,7 @@ curl -X POST "https://api.biosensei.io/api/doors/actions" \
 
 *   **Tiempo Real:** BioSensei utiliza WebSockets (ActionCable) para notificar cambios de estado en los dispositivos y nuevos registros de acceso.
 *   **Seguridad:** Asegúrate de no exponer tu `X-Workspace-Code` ni tu token JWT en entornos públicos o en el frontend directamente sin las medidas de seguridad adecuadas.
-*   **Soporte:** Para dudas adicionales, consulta la documentación oficial en [biosensei.io/docs](https://biosensei.io/docs).
+*   **Soporte:** Para dudas adicionales, consulta la documentación oficial en [biosensei.io]([https://biosensei.io/docs](https://biosensei.io/docs/api/intro)).
 
 ---
 
