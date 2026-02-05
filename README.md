@@ -10,7 +10,6 @@ Para interactuar con la API, todas las peticiones deben incluir los siguientes e
 | Header | Descripción |
 | :--- | :--- |
 | `Authorization` | `Bearer <TU_TOKEN_JWT>` |
-| `X-Workspace-Code` | Código identificador de tu Workspace (ej: `mi_empresa`) |
 | `Content-Type` | `application/json` |
 
 **Base URL:** `https://api.biosensei.io`
