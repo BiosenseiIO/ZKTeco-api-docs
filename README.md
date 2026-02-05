@@ -41,12 +41,7 @@ curl -X GET "https://api.biosensei.io/api/devices" \
       "status": "online",
       "ip": "192.168.1.10"
     }
-  ],
-  "pagy": {
-    "count": 1,
-    "page": 1,
-    "pages": 1
-  }
+  ]
 }
 ```
 
