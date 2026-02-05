@@ -28,8 +28,7 @@ Permite listar todos los dispositivos vinculados al workspace actual, incluyendo
 **Ejemplo de Petición (cURL):**
 ```bash
 curl -X GET "https://api.biosensei.io/api/devices" \
-     -H "Authorization: Bearer <TOKEN>" \
-     -H "X-Workspace-Code: mi_empresa"
+     -H "Authorization: Bearer <TOKEN>"
 ```
 
 **Respuesta Exitosa:**
@@ -38,7 +37,7 @@ curl -X GET "https://api.biosensei.io/api/devices" \
   "devices": [
     {
       "id": 123,
-      "name": "Puerta Principal",
+      "name": "Main Door",
       "serial_number": "ABC123456789",
       "status": "online",
       "ip": "192.168.1.10"
@@ -58,7 +57,7 @@ curl -X GET "https://api.biosensei.io/api/devices" \
 Envía un comando instantáneo a uno o varios dispositivos para liberar el cierre electrónico de la puerta.
 
 **Endpoint:**
-`POST /api/doors/actions`
+`POST /api/devices/actions`
 
 **Cuerpo de la Petición (JSON):**
 | Parámetro | Tipo | Descripción |
@@ -70,10 +69,9 @@ Envía un comando instantáneo a uno o varios dispositivos para liberar el cierr
 ```bash
 curl -X POST "https://api.biosensei.io/api/doors/actions" \
      -H "Authorization: Bearer <TOKEN>" \
-     -H "X-Workspace-Code: mi_empresa" \
      -H "Content-Type: application/json" \
      -d '{
-           "door_ids": [123],
+           "door_id": 123,
            "command_action": "OpenDoor"
          }'
 ```
